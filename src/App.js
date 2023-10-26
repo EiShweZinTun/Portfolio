@@ -9,20 +9,19 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 
 const style = {
-  bg: `h-screen- w-screen p-4 bg-gradient-to-r from-[#2F80ED]`
+  bg: `bg-gradient-to-r from-[#2F80ED]`
 }
 
 const App = () => {
   return (
     <div className={style.bg}>
-      <Header />
+      {/* <Header /> */}
       <Banner />
       <About />
       <Work />
       <Skills />
       <Contact />
       <Nav />
-      <div className ='h-[4000px]'></div> 
     </div>
   );
 }

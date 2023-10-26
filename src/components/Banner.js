@@ -13,23 +13,23 @@ import banner from '../assets/banner.png';
 
 const Banner = () => {
   return (
-    <section className ='min-h-[85vh] lg:min-h-[78vh] flex items-center m-auto' id='home'>
-      <div className='container mx-auto'>
+    <section className ='h-screen flex items-center m-auto' id='home'>
+      <div className='mx-auto'>
         <div className='flex justify-between border-0'>
           <div className='m-auto'>
           <div className='flex-1 text-center font-secondary lg:text-left'>
             <motion.h1
-              varients = {fadeIn('up',0.3)}
+              variants = {fadeIn('up',0.3)}
               initial="hidden"
-              whiteInView={'show'}
+              whileInView={'show'}
               viewport={{once: false, amount:0.7}}
               className='text-[40px] font-bold leading-[0.8] lg:text-[80px]'>
               EiShweSin<span>Tun</span></motion.h1>
           </div>
           <motion.div 
-            varients = { fadeIn('up',0.4)}
+            variants = { fadeIn('up',0.4)}
             initial="hidden"
-            whiteInView={'show'}
+            whileInView={'show'}
             viewport={{once: false, amount:0.7}}
             className='mb-6 font-secondary font-semibold uppercase leading-[1] mt-5'>
             <span className='mr-4 text-white'>I am</span>
@@ -40,17 +40,17 @@ const Banner = () => {
             />
           </motion.div>
           <motion.p
-            varients = { fadeIn('up',0.5)}
+            variants = { fadeIn('up',0.5)}
             initial="hidden"
-            whiteInView={'show'}
+            whileInView={'show'}
             viewport={{once: false, amount:0.7}}
             className='mb-8 max-w-lg  mx-auto lg:mx-0'>I am an experienced JavaScript developer with a strong proficiency in React.js and using related technologies.
             Results-driven JavaScript and React.js developer with 4 years of experience creating responsive and interactive web applications.Adept at collaborating with cross-functional teams to deliver high-quality software solutions.
-</motion.p>
+          </motion.p>
           <motion.div
-            varients = { fadeIn('up',0.6)}
+            variants = { fadeIn('up',0.6)}
             initial="hidden"
-            whiteInView={'show'}
+            whileInView={'show'}
             viewport={{once: false, amount:0.7}}
             className='flex mx-w-mx gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
             <button className='btn btn-lg'>Contact me</button>
@@ -58,9 +58,9 @@ const Banner = () => {
           </motion.div>
           {/* social Link */}
           <motion.div 
-            varients = { fadeIn('up',0.7)}
+            variants = { fadeIn('up',0.7)}
             initial="hidden"
-            whiteInView={'show'}
+            whileInView={'show'}
             viewport={{once: false, amount:0.7}}
             className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
             <a href='#'>
@@ -79,9 +79,9 @@ const Banner = () => {
           </div>
           <div className='mt-8'>
           <motion.div 
-            varients = { fadeIn('down',0.5)}
+            variants = { fadeIn('down',0.5)}
             initial="hidden"
-            whiteInView={'show'}
+            whileInView={'show'}
             className='hidden lg:flex flex-1 max-w-[380px] lg:max-w-[480px]'>
             <img src={banner}/>
           </motion.div> 
