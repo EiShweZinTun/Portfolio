@@ -14,7 +14,7 @@ import banner from '../assets/banner.png';
 const Banner = () => {
   return (
     <section className ='h-screen flex items-center m-auto' id='home'>
-      <div className='mx-auto'>
+      <div className='mx-auto p-10 lg:p-0'>
         <div className='flex justify-between border-0'>
           <div className='m-auto'>
           <div className='flex-1 text-center font-secondary lg:text-left'>
@@ -44,7 +44,7 @@ const Banner = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{once: false, amount:0.7}}
-            className='mb-8 max-w-lg  mx-auto lg:mx-0'>I am an experienced JavaScript developer with a strong proficiency in React.js and using related technologies.
+            className='mb-8 max-w-lg  mx-auto lg:mx-0 text-center lg:text-left'>I am an experienced JavaScript developer with a strong proficiency in React.js and using related technologies.
             Results-driven JavaScript and React.js developer with 4 years of experience creating responsive and interactive web applications.Adept at collaborating with cross-functional teams to deliver high-quality software solutions.
           </motion.p>
           <motion.div
@@ -52,7 +52,7 @@ const Banner = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{once: false, amount:0.7}}
-            className='flex mx-w-mx gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+            className='flex mx-w-mx gap-x-6 items-center justify-center lg:justify-start mb-12 mx-auto lg:mx-0'>
             <button className='btn btn-lg'>Contact me</button>
             <a href='#' className='text-gradient btn-link'>My Portfolio</a>
           </motion.div>
@@ -83,7 +83,7 @@ const Banner = () => {
             initial="hidden"
             whileInView={'show'}
             className='hidden lg:flex flex-1 max-w-[380px] lg:max-w-[480px]'>
-            <img src={banner}/>
+            <img src={banner} alt='my profile'/>
           </motion.div> 
           </div>
         </div>
